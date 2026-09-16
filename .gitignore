@@ -1,0 +1,9 @@
+# Compilados de C/C++
+*.exe
+*.o
+*.obj
+*.out
+
+# Arquivos temporários e pastas de IDEs
+.vs/
+.vscode/
