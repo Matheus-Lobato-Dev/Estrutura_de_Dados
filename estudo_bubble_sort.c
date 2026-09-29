@@ -1,4 +1,4 @@
-// estudo do bubble sort
+
 
 #include <stdio.h>
 #include <stdlib.h>
