@@ -33,7 +33,7 @@ int pilha_esta_vazia(Pilha *p) {
 
 //terefa 1
 
-void pilha_exbir_topo_abaixo(Pilha *p){
+void pilha_exibir_topo_abaixo(Pilha *p){
     if (p == NULL || pilha_esta_vazia(p)) {
         printf("Pilha vazia ou nao alocada!\n");
         return;
@@ -47,7 +47,7 @@ void pilha_exbir_topo_abaixo(Pilha *p){
 //tarefa 2
 
 
-int pto_extrair_abaixo_topo(Pilha *p) {
+int pilha_extrair_abaixo_topo(Pilha *p) {
     if (p ==    NULL || p -> topo < 1 ) {
         printf ("Nao ha elemento sufuciente abaixo do topo para extrair");
         return -1;
@@ -63,7 +63,7 @@ int pto_extrair_abaixo_topo(Pilha *p) {
 //tarefa 3
 
 
-void pto_amassar_topo(Pilha *p, int novo) {
+void pilha_amassar_topo(Pilha *p, int novo) {
     if (p == NULL ) return;
     if (pilha_esta_vazia(p)) {
         p-> topo ++;
@@ -85,7 +85,7 @@ void pto_amassar_topo(Pilha *p, int novo) {
 
 
 
-void pto_amassar_pilha(Pilha *p, int novo) {
+void pilha_amassar_pilha(Pilha *p, int novo) {
     if (p == NULL) return;
 
     while (!pilha_esta_vazia(p) && novo > p->dados [p-> topo])
@@ -103,7 +103,7 @@ void pto_amassar_pilha(Pilha *p, int novo) {
 
 //tarefa 5
 
-void pto_sobrecarrega_pilha(Pilha *p, int novo) {
+void pilha_sobrecarrega_pilha(Pilha *p, int novo) {
     if (p == NULL) return;
 
     if (p->topo < max - 2) {
@@ -120,7 +120,7 @@ void pto_sobrecarrega_pilha(Pilha *p, int novo) {
 //tarefa 6
 
 
-int pto_empilhar_preservando_um(Pilha *p, int novo) {
+int pilha_empilhar_preservando_um(Pilha *p, int novo) {
     if (p == NULL || p->topo >= max - 2) {
         printf("Erro: Empilhamento negado para preservar o ultimo espaco de seguranca!\n");
         return 0; 

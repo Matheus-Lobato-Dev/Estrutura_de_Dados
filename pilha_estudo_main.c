@@ -2,7 +2,7 @@
 #include "pilha_estudo.h"
 
 int main(void) {
-    Pilha *minha_pilha = pto_cria();
+    Pilha *minha_pilha = pilha_cria();
 
     printf("--- Testando Tarefa 6 (Preservar 1 posicao) ---\n");
     for(int i = 1; i <= 10; i++) {
